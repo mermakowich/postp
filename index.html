@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-Punk.ru - Портал о русском пост-панке</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="modalBackground">
+        <div class="modalActive">
+            <div class="modalWindow">
+                <img src="img/modal-close.png" class="modalClose" />
+                <div class="authorization">
+                    <h3>Авторизация</h3>
+                    <form>
+                        <input type="text" placeholder="Введите логин" class="login-name account">
+                        <input type="password" placeholder="Введите пароль" class="login-password account">
+                        <input type="submit" id="authorize" class="authorize-btn" value="Войти">
+                    </form>
+                    <p class="reg">Ещё не зарегистрированы? <a href="" class="reg-btn">Зарегистрироваться</a></p>
+                </div>
+                <div class="registration hidden">
+                    <h3>Регистрация</h3>
+                    <form>
+                        <input type="text" placeholder="Придумайте логин" class="registration-name account">
+                        <input type="password" placeholder="Придумайте пароль" class="registration-password account">
+                        <input type="submit" id="register" class="registration-btn" value="Зарегистрироваться">
+                    </form>
+                    <p class="log">Уже зарегистрированы? <a href="" class="log-btn">Войти</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Логотип Post-Punk.ru">
+                    <h1>post-punk.ru</h1>
+                </div>
+
+                <div class="center">
+                    <ul>
+                        <a href="#top" class="padd active">Главная</a>
+                        <a href="discography.html" class="padd">Дискография</a>
+                        <a href="videos.html" class="padd">Клипы</a>
+                        <a href="#blog">Блог</a>
+                    </ul>
+                </div>
+
+                <div class="right-column">
+                    <a href="#" class="login">Войти</a>
+                    <a href="account.html"><img src="img/avatar.png" alt="" class="hidden avatar"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="grad1">
+            <div class="container">
+                <form id="search-form">
+                    <input type="text" placeholder="Поиск групп..." class="text-input">
+                    <button type="submit" id="searchb" class="search-button" value=""></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="grad2">
+            <a href="#top" id="back-to-top" title="Наверх" class="btn-up btn-up_hide"></a>
+            <div class="container">
+                <div class="search-result hidden" id="search-results">
+                    <h2>Результаты поиска</h2>
+
+                    <div class="poisk" id="poisk">
+                        <div class="result result1">
+                            <div class="left-column">
+                                <h3>Молчат Дома</h3>
+                                <p>Синт-пост-панк группа из Минска</p>
+                            </div>
+
+                            <div class="center-column">
+                                <ul style="list-style-type:disc" class="main-column center-column">
+                                    <li class="firstli">Пост-панк</li>
+                                    <li class="baseli">Нью-вейв</li>
+                                    <li class="baseli">Синт-поп</li>
+                                </ul>
+                            </div>
+
+                            <div class="right-column">
+                                <a href="band.html?id=molchat-doma">Открыть</a>
+                            </div>
+                        </div>
+
+                        <div class="result result2" id="1pres2">
+                            <div class="left-column">
+                                <h3>Ploho</h3>
+                                <p>Пост-панк группа из Новосибирска</p>
+                            </div>
+
+                            <div class="center-column">
+                                <ul style="list-style-type:disc" class="main-column center-column">
+                                    <li class="firstli">Пост-панк</li>
+                                    <li class="baseli">Новая волна</li>
+                                    <li class="baseli">Готик-рок</li>
+                                </ul>
+                            </div>
+
+                            <div class="right-column">
+                                <a href="band.html?id=ploho">Открыть</a>
+                            </div>
+                        </div>
+
+                        <div class="result result3" id="1pres3">
+                            <div class="left-column">
+                                <h3>Перемотка</h3>
+                                <p>Электропанк-дуэт из Санкт-Петербурга</p>
+                            </div>
+
+                            <div class="center-column">
+                                <ul style="list-style-type:disc" class="main-column center-column">
+                                    <li class="firstli">Пост-панк</li>
+                                    <li class="baseli">Электропанк</li>
+                                    <li class="baseli">Синтвейв</li>
+                                </ul>
+                            </div>
+
+                            <div class="right-column">
+                                <a href="band.html?id=peremotka">Открыть</a>
+                            </div>
+                        </div>
+
+                        <div class="center-bottom-div">
+                            <a href="#" class="center-bottom" id="1cent">
+                                <p>показать ещё...</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-result best-bands" id="best">
+                    <h2 class="bests-hh">Популярные группы</h2>
+
+                    <div class="result result1">
+                        <div class="number">
+                            <p>#1</p>
+                        </div>
+
+                        <div class="left-column">
+                            <h3>Молчат Дома</h3>
+                            <p>Синт-пост-панк группа из Минска, основана в 2017 году</p>
+                        </div>
+
+                        <div class="center-column">
+                            <ul style="list-style-type:disc" class="main-column center-column">
+                                <li class="firstli">Пост-панк</li>
+                                <li class="baseli">Нью-вейв</li>
+                                <li class="baseli">Синт-поп</li>
+                            </ul>
+                        </div>
+
+                        <div class="right-column">
+                            <a href="band.html?id=molchat-doma">Открыть</a>
+                        </div>
+                    </div>
+
+                    <div class="result result2">
+                        <div class="number">
+                            <p>#2</p>
+                        </div>
+
+                        <div class="left-column">
+                            <h3>Ploho</h3>
+                            <p>Пост-панк группа из Новосибирска, основана в 2013 году</p>
+                        </div>
+
+                        <div class="center-column">
+                            <ul style="list-style-type:disc" class="main-column center-column">
+                                <li class="firstli">Пост-панк</li>
+                                <li class="baseli">Новая волна</li>
+                                <li class="baseli">Готик-рок</li>
+                            </ul>
+                        </div>
+
+                        <div class="right-column">
+                            <a href="band.html?id=ploho">Открыть</a>
+                        </div>
+                    </div>
+
+                    <div class="result result3" id="2pres3">
+                        <div class="number">
+                            <p>#3</p>
+                        </div>
+
+                        <div class="left-column">
+                            <h3>Кино</h3>
+                            <p>Легендарная пост-панк группа из Ленинграда, основана в 1982 году</p>
+                        </div>
+
+                        <div class="center-column">
+                            <ul style="list-style-type:disc" class="main-column center-column">
+                                <li class="firstli">Пост-панк</li>
+                                <li class="baseli">Нью-вейв</li>
+                                <li class="baseli">Рок</li>
+                            </ul>
+                        </div>
+
+                        <div class="right-column">
+                            <a href="band.html?id=kino">Открыть</a>
+                        </div>
+                    </div>
+
+                    <div class="center-bot">
+                        <div class="center-bottom-div">
+                            <a href="#" class="center-bottom" id="2cent">
+                                <p>показать ещё...</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog" id="blog">
+                    <h2>Блог</h2>
+                    <div class="blog-content">
+                        <div class="left-column">
+                            <div class="news-item news-item1 news-active" type="button">
+                                <p>1</p>
+                                <h3>Новый альбом "Молчат Дома"</h3>
+                            </div>
+                            <div class="news-item news-item2" type="button">
+                                <p>2</p>
+                                <h3>Тур Ploho по Европе</h3>
+                            </div>
+                            <div class="news-item news-item3" type="button">
+                                <p>3</p>
+                                <h3>История пост-панка в России</h3>
+                            </div>
+                        </div>
+
+                        <div class="right-column" id="news-right">
+                            <div class="news-text news-text1" style="display: flex;">
+                                <img src="img/molchat-doma-album.jpg" alt="Новый альбом Молчат Дома">
+                                <p>Белорусская группа "Молчат Дома" анонсировала выход нового альбома "Тени в тумане", который станет их четвертой студийной работой. Релиз запланирован на осень этого года. По словам музыкантов, альбом будет продолжать их фирменное звучание, но с более экспериментальным подходом к записи.</p>
+                            </div>
+                            <div class="news-text news-text2">
+                                <img src="img/ploho-tour.jpg" alt="Тур Ploho">
+                                <p>Новосибирская группа Ploho отправляется в большой европейский тур в поддержку своего последнего альбома. Музыканты посетят более 15 городов, включая Берлин, Прагу, Варшаву и Париж. Это будет самый масштабный зарубежный тур в истории коллектива.</p>
+                            </div>
+                            <div class="news-text news-text3">
+                                <img src="img/russian-post-punk.jpg" alt="История пост-панка в России">
+                                <p>Рассказываем об истории российского пост-панка от советских времен до наших дней. Как классики жанра вроде "Кино" и "Гражданской Обороны" повлияли на современных исполнителей, и почему русскоязычный пост-панк стал так популярен за рубежом в последние годы.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/logo.png" alt="Логотип Post-Punk.ru">
+                    <h2>post-punk.ru</h2>
+                </div>
+                <div class="footer-links">
+                    <h3>Разделы</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="discography.html">Дискография</a></li>
+                        <li><a href="videos.html">Клипы</a></li>
+                        <li><a href="#blog">Блог</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Социальные сети</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">VK</a>
+                        <a href="#" class="social-icon">Telegram</a>
+                        <a href="#" class="social-icon">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 Post-Punk.ru - Портал о русском пост-панке. Учебный проект.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дискография - Post-Punk.ru</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/discography.css">
+</head>
+
+<body>
+    <div class="modalBackground">
+        <div class="modalActive">
+            <div class="modalWindow">
+                <img src="img/modal-close.png" class="modalClose" />
+                <div class="authorization">
+                    <h3>Авторизация</h3>
+                    <form>
+                        <input type="text" placeholder="Введите логин" class="login-name account">
+                        <input type="password" placeholder="Введите пароль" class="login-password account">
+                        <input type="submit" id="authorize" class="authorize-btn" value="Войти">
+                    </form>
+                    <p class="reg">Ещё не зарегистрированы? <a href="" class="reg-btn">Зарегистрироваться</a></p>
+                </div>
+                <div class="registration hidden">
+                    <h3>Регистрация</h3>
+                    <form>
+                        <input type="text" placeholder="Придумайте логин" class="registration-name account">
+                        <input type="password" placeholder="Придумайте пароль" class="registration-password account">
+                        <input type="submit" id="register" class="registration-btn" value="Зарегистрироваться">
+                    </form>
+                    <p class="log">Уже зарегистрированы? <a href="" class="log-btn">Войти</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Логотип Post-Punk.ru">
+                    <h1>post-punk.ru</h1>
+                </div>
+
+                <div class="center">
+                    <ul>
+                        <a href="index.html" class="padd">Главная</a>
+                        <a href="#top" class="padd active">Дискография</a>
+                        <a href="videos.html" class="padd">Клипы</a>
+                        <a href="index.html#blog">Блог</a>
+                    </ul>
+                </div>
+
+                <div class="right-column">
+                    <a href="#" class="login">Войти</a>
+                    <a href="account.html"><img src="img/avatar.png" alt="" class="hidden avatar"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="grad1">
+            <div class="container">
+                <form id="search-form">
+                    <input type="text" placeholder="Поиск альбомов и песен..." class="text-input">
+                    <button type="submit" id="searchb" class="search-button" value=""></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="grad2">
+            <a href="#top" id="back-to-top" title="Наверх" class="btn-up btn-up_hide"></a>
+            <div class="container">
+                <div class="discography-container">
+                    <div class="sidebar">
+                        <h2>Исполнители</h2>
+                        <ul class="artists-list">
+                            <li class="artist-item active" data-artist="all">Все исполнители</li>
+                            <li class="artist-item" data-artist="molchat-doma">Молчат Дома</li>
+                            <li class="artist-item" data-artist="ploho">Ploho</li>
+                            <li class="artist-item" data-artist="kino">Кино</li>
+                            <li class="artist-item" data-artist="peremotka">Перемотка</li>
+                            <li class="artist-item" data-artist="chernikovskaya-hata">Черниковская Хата</li>
+                            <li class="artist-item" data-artist="motorama">Motorama</li>
+                            <li class="artist-item" data-artist="buerak">Буерак</li>
+                        </ul>
+                        <div class="filter-options">
+                            <h3>Сортировка</h3>
+                            <select id="sort-options">
+                                <option value="year-desc">Новые сначала</option>
+                                <option value="year-asc">Старые сначала</option>
+                                <option value="name-asc">По названию (А-Я)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="albums-container">
+                        <h2 class="albums-heading">Все альбомы</h2>
+                        
+                        <div class="albums-grid">
+                            <div class="album-card" data-artist="molchat-doma" data-year="2020">
+                                <div class="album-cover">
+                                    <img src="img/albums/molchat-doma-monument.jpg" alt="Молчат Дома - Monument">
+                                </div>
+                                <div class="album-info">
+                                    <h3>Monument</h3>
+                                    <p class="album-artist">Молчат Дома</p>
+                                    <p class="album-year">2020</p>
+                                    <a href="#" class="album-details">Подробнее</a>
+                                </div>
+                            </div>
+
+                            <div class="album-card" data-artist="molchat-doma" data-year="2018">
+                                <div class="album-cover">
+                                    <img src="img/albums/molchat-doma-etazhi.jpg" alt="Молчат Дома - Этажи">
+                                </div>
+                                <div class="album-info">
+                                    <h3>Этажи</h3>
+                                    <p class="album-artist">Молчат Дома</p>
+                                    <p class="album-year">2018</p>
+                                    <a href="#" class="album-details">Подробнее</a>
+                                </div>
+                            </div>
+
+                            <div class="album-card" data-artist="ploho" data-year="2021">
+                                <div class="album-cover">
+                                    <img src="img/albums/ploho-fantomy.jpg" alt="Ploho - Фантомы">
+                                </div>
+                                <div class="album-info">
+                                    <h3>Фантомы</h3>
+                                    <p class="album-artist">Ploho</p>
+                                    <p class="album-year">2021</p>
+                                    <a href="#" class="album-details">Подробнее</a>
+                                </div>
+                            </div>
+
+                            <div class="album-card" data-artist="kino" data-year="1988">
+                                <div class="album-cover">
+                                    <img src="img/albums/kino-gruppa-krovi.jpg" alt="Кино - Группа крови">
+                                </div>
+                                <div class="album-info">
+                                    <h3>Группа крови</h3>
+                                    <p class="album-artist">Кино</p>
+                                    <p class="album-year">1988</p>
+                                    <a href="#" class="album-details">Подробнее</a>
+                                </div>
+                            </div>
+
+                            <div class="album-card" data-artist="peremotka" data-year="2022">
+                                <div class="album-cover">
+                                    <img src="img/albums/peremotka-tancpol.jpg" alt="Перемотка - Танцпол">
+                                </div>
+                                <div class="album-info">
+                                    <h3>Танцпол</h3>
+                                    <p class="album-artist">Перемотка</p>
+                                    <p class="album-year">2022</p>
+                                    <a href="#" class="album-details">Подробнее</a>
+                                </div>
+                            </div>
+
+                            <div class="album-card" data-artist="chernikovskaya-hata" data-year="2019">
+                                <div class="album-cover">
+                                    <img src="img/albums/chernikovskaya-hata-mayskoye.jpg" alt="Черниковская Хата - Майское">
+                                </div>
+                                <div class="album-info">
+                                    <h3>Майское</h3>
+                                    <p class="album-artist">Черниковская Хата</p>
+                                    <p class="album-year">2019</p>
+                                    <a href="#" class="album-details">Подробнее</a>
+                                </div>
+                            </div>
+
+                            <div class="album-card" data-artist="motorama" data-year="2021">
+                                <div class="album-cover">
+                                    <img src="img/albums/motorama-many-nights.jpg" alt="Motorama - Many Nights">
+                                </div>
+                                <div class="album-info">
+                                    <h3>Many Nights</h3>
+                                    <p class="album-artist">Motorama</p>
+                                    <p class="album-year">2021</p>
+                                    <a href="#" class="album-details">Подробнее</a>
+                                </div>
+                            </div>
+
+                            <div class="album-card" data-artist="buerak" data-year="2020">
+                                <div class="album-cover">
+                                    <img src="img/albums/buerak-tantsuy-chornyy-chelovek.jpg" alt="Буерак - Танцуй черный человек">
+                                </div>
+                                <div class="album-info">
+                                    <h3>Танцуй черный человек</h3>
+                                    <p class="album-artist">Буерак</p>
+                                    <p class="album-year">2020</p>
+                                    <a href="#" class="album-details">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pagination">
+                            <button class="pagination-button active">1</button>
+                            <button class="pagination-button">2</button>
+                            <button class="pagination-button">3</button>
+                            <button class="pagination-button next">→</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/logo.png" alt="Логотип Post-Punk.ru">
+                    <h2>post-punk.ru</h2>
+                </div>
+                <div class="footer-links">
+                    <h3>Разделы</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="discography.html">Дискография</a></li>
+                        <li><a href="videos.html">Клипы</a></li>
+                        <li><a href="index.html#blog">Блог</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Социальные сети</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">VK</a>
+                        <a href="#" class="social-icon">Telegram</a>
+                        <a href="#" class="social-icon">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 Post-Punk.ru - Портал о русском пост-панке. Учебный проект.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/discography.js"></script>
+</body>
+</html>
